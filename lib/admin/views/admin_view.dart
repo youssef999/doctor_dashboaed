@@ -1,5 +1,7 @@
 
 
+import 'package:doctor/admin/NUMBS/num_view.dart';
+import 'package:doctor/admin/comp/comp_view.dart';
 import 'package:doctor/admin/controller/admin_controller.dart';
 import 'package:doctor/admin/views/doctors_view.dart';
 import 'package:doctor/admin/views/mndob_view.dart';
@@ -138,9 +140,6 @@ class _AdminViewState extends State<AdminView> {
 
           ],),
           SizedBox(height: 21,),
-
-          //TopDocView
-
           Row(
             mainAxisAlignment:MainAxisAlignment.spaceBetween,
             children: [
@@ -164,9 +163,81 @@ class _AdminViewState extends State<AdminView> {
                 },
               ),
 
+              InkWell(
+                child: SizedBox(
+                  width: 311,
+                  child: Card(
+                    color:Colors.green,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:Center(
+                        child: Text("عرض الشكاوي ",style:TextStyle(
+                            color:Colors.white,fontSize: 18
+                        ),),
+                      ),
+                    ),),
+                ),
+                onTap: () {
+                  Get.to( CompView());
+                  //  Get.to(UsersView());
+                },
+              ),
+
+
 
 
             ],),
+
+          SizedBox(height: 21,),
+          Row(
+            mainAxisAlignment:MainAxisAlignment.spaceBetween,
+            children: [
+              InkWell(
+                child: SizedBox(
+                  width: 311,
+                  child: Card(
+                    color:Colors.green,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:Center(
+                        child: Text(" عدد المستخدمين و الاطباء ",style:TextStyle(
+                            color:Colors.white,fontSize: 18
+                        ),),
+                      ),
+                    ),),
+                ),
+                onTap: () {
+                  Get.to( NumView());
+                  //  Get.to(UsersView());
+                },
+              ),
+
+              InkWell(
+                child: SizedBox(
+                  width: 311,
+                  child: Card(
+                    color:Colors.green,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:Center(
+                        child: Text("عرض الشكاوي ",style:TextStyle(
+                            color:Colors.white,fontSize: 18
+                        ),),
+                      ),
+                    ),),
+                ),
+                onTap: () {
+                  Get.to( CompView());
+                  //  Get.to(UsersView());
+                },
+              ),
+
+
+
+
+            ],),
+
+          //NumView
           
         ],),
       ),

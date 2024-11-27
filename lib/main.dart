@@ -49,27 +49,18 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     final box = GetStorage();
-   
     ///en //ar //' '
     String email = box.read('email') ?? 'x';
-  
    return GetMaterialApp(
-    
        builder: BotToastInit(), // Initialize BotToast
       navigatorObservers: [BotToastNavigatorObserver()], // Register BotToastObserver
       home: AdminView(),
         // translations: MyLocal(),
         translations: MyLocal(),
         title: "Doctor",
-     
-     
         debugShowCheckedModeBanner: false,
         defaultTransition: Transition.cupertino,
-      
-   
       );
-
-    
   }
 }
 

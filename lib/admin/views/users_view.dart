@@ -85,9 +85,12 @@ class UserCardWidget extends StatelessWidget {
                   ),),
                   const SizedBox(height: 10),
 
-                  CustomButton(text: ' حذف المستخدم ', onPressed: (){
-                    controller.deleteUser(int.parse(user['id']));
-                  }),
+                  SizedBox(
+                    width: 333,
+                    child: CustomButton(text: ' حذف المستخدم ', onPressed: (){
+                      controller.deleteUser(int.parse(user['id']));
+                    }),
+                  ),
 
                   const SizedBox(height: 10),
                 ],),
