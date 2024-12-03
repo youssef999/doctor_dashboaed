@@ -1,8 +1,4 @@
-
-
-
-
- import 'package:doctor/admin/comp/comp_controller.dart';
+import 'package:doctor/admin/comp/comp_controller.dart';
 import 'package:doctor/core/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -26,7 +22,7 @@ class NumView extends StatefulWidget {
    @override
    Widget build(BuildContext context) {
      return Scaffold(
-       appBar: CustomAppBar('', context,false),
+       appBar: CustomAppBar('DASHBOARD', context,false),
        body:Padding(
          padding: const EdgeInsets.all(8.0),
          child: GetBuilder<CompController>(
