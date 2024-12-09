@@ -1,7 +1,7 @@
-import 'package:doctor/core/widgets/custom_app_bar.dart';
 import 'package:doctor/features/st/st_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TopDocView extends StatefulWidget {
   const TopDocView({super.key});
@@ -82,7 +82,7 @@ class DoctorCard extends StatelessWidget {
              //   child: Image.network(doctor['doctor_image'] ?? '', height: 100, width: 100)),
             Text(
               doctor['doctor_name'] ?? 'Unknown',
-              style: TextStyle(
+              style: GoogleFonts.cairo(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
@@ -92,7 +92,7 @@ class DoctorCard extends StatelessWidget {
             SizedBox(height: 8),
             Text(
               doctor['doctor_qualifications'] ?? '',
-              style: TextStyle(
+              style: GoogleFonts.cairo(
                 fontSize: 14,
                 color: Colors.grey[600],
               ),
@@ -109,7 +109,7 @@ class DoctorCard extends StatelessWidget {
                     SizedBox(width: 4),
                     Text(
                       doctor['average_rate']?.toString() ?? '0',
-                      style: TextStyle(
+                      style: GoogleFonts.cairo(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
@@ -118,7 +118,7 @@ class DoctorCard extends StatelessWidget {
                 ),
                 Text(
                   '${doctor['total_reviews'] ?? 0} Reviews',
-                  style: TextStyle(
+                  style: GoogleFonts.cairo(
                     fontSize: 12,
                     color: Colors.grey[700],
                   ),

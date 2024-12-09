@@ -2,7 +2,6 @@
 
 import 'package:doctor/core/resources/app_colors.dart';
 import 'package:doctor/features/root/controller/root_controller.dart';
-import 'package:doctor/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,16 +15,11 @@ PreferredSizeWidget CustomAppBar(
     elevation: 0,
     centerTitle: true,
   toolbarHeight: 80,
-    leading:  IconButton(
-            onPressed: () {
-              Get.back();
-            },
-            icon: const Icon(Icons.arrow_back_ios,color: AppColors.whiteColor,)),
     title: Padding(
       padding: const EdgeInsets.all(24 * 1.2),
       child: Text(
         text,
-        style: GoogleFonts.alexandria(
+        style: GoogleFonts.cairo(
           fontSize: 17,
           fontWeight: FontWeight.w400,
           color: AppColors.whiteColor,

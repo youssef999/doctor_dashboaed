@@ -79,7 +79,7 @@ class ReservationView extends GetView<DoctorController> {
             ),
             const SizedBox(width: 5),
             Text('غداً 8 مارس',
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   color: AppColors.greyColor.withOpacity(.4),
                   fontSize: 10,
                   fontWeight: FontWeight.w600,
@@ -92,7 +92,7 @@ class ReservationView extends GetView<DoctorController> {
                 color: AppColors.primaryBGLightColor.withOpacity(.5), size: 20),
             const SizedBox(width: 5),
             Text('محافظة النجف / حي...',
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   color: AppColors.greyColor.withOpacity(.4),
                   fontSize: 10,
                   fontWeight: FontWeight.w600,
@@ -105,7 +105,7 @@ class ReservationView extends GetView<DoctorController> {
           const SizedBox(width: 5),
           Text(
             '300 دينار',
-            style: GoogleFonts.alexandria(
+            style: GoogleFonts.cairo(
               color: AppColors.greyColor.withOpacity(.4),
               fontSize: 10,
               fontWeight: FontWeight.w600,
@@ -192,7 +192,7 @@ class ReservationView extends GetView<DoctorController> {
           Center(
               child: Text(
             'معلومات اضاقية للدكتور (اختياري)',
-            style: GoogleFonts.alexandria(),
+            style: GoogleFonts.cairo(),
           )),
           const SizedBox(
             height: 10,
@@ -236,7 +236,7 @@ class ReservationView extends GetView<DoctorController> {
         child: Text(
           'تاكيد الحجز',
           textAlign: TextAlign.center,
-          style: GoogleFonts.alexandria(
+          style: GoogleFonts.cairo(
             fontWeight: FontWeight.w700,
             fontSize: 17,
             height: 1.3,
@@ -277,7 +277,7 @@ class DoctorProfile extends StatelessWidget {
             children: [
               Text(
                 name,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   color: Colors.black,
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
@@ -285,7 +285,7 @@ class DoctorProfile extends StatelessWidget {
               ),
               Text(
                 describe,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   color: Colors.black,
                   fontSize: 8,
                 ),

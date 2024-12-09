@@ -42,14 +42,14 @@ class _CustomTextFormFieldV2State extends State<CustomTextFormFieldV2> {
           onChanged: widget.onChanged,
           decoration: InputDecoration(
             labelText: widget.label, // Label text in Arabic
-            labelStyle: GoogleFonts.alexandria(),
+            labelStyle: GoogleFonts.cairo(),
             suffixIcon: widget.suffix != null ? Icon(widget.suffix) : null,
             floatingLabelBehavior: FloatingLabelBehavior
                 .always, // Always show the label at the top
             alignLabelWithHint: true,
             hintText: widget.hint,
       
-            hintStyle: GoogleFonts.alexandria(
+            hintStyle: GoogleFonts.cairo(
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.3),
                 fontWeight: FontWeight.w600),

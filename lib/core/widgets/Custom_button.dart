@@ -1,63 +1,62 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../resources/app_colors.dart';
 
-
-  // ignore: must_be_immutable
-  class CustomButton extends StatelessWidget {
-
-  final String  text;
-  final Function  onPressed;
+// ignore: must_be_immutable
+class CustomButton extends StatelessWidget {
+  final String text;
+  final Function onPressed;
   Color color1;
+  double? size;
   Color color2;
 
-  CustomButton({super.key, 
+  CustomButton({
+    super.key,
     required this.text,
     required this.onPressed,
-  this.color1=Colors.green,
-    this.color2=Colors.white,
+    this.size,
+    this.color1 = Colors.green,
+    this.color2 = Colors.white,
   });
-
 
   @override
   Widget build(BuildContext context) {
-    return
-      SizedBox(
-        width:120,
-        height:50,
-        child:InkWell(
-          child: 
-          Container(
-            decoration:  BoxDecoration(
-              color: color1,
+    return SizedBox(
+        // width:120,
+        height: 50,
+        child: InkWell(
+            child: Container(
+              decoration: BoxDecoration(
+                color: color1,
                 borderRadius: const BorderRadius.all(Radius.circular(22)),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.lightColor.withOpacity(0.1),
-                  spreadRadius: 2,
-                  blurRadius: 7,
-                  offset: const Offset(0, 3), // changes position of shadow
-                ),
-              ],
-            ),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.lightColor.withOpacity(0.1),
+                    spreadRadius: 2,
+                    blurRadius: 7,
+                    offset: const Offset(0, 3), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Text(
+                    text,
 
-            child: Center(
-              child:Padding(
-                padding: const EdgeInsets.all(1.0),
-                child: 
-                Text(
-                  text,style:const TextStyle(color:Colors.white,fontSize: 17),
+                    maxLines: 1,
+                    style: GoogleFonts.cairo(
+                        color: Colors.white, fontSize:size?? 17),
+                  ),
                 ),
               ),
             ),
-          ),
-          onTap:(){
-            onPressed();
-          }
-        )
-
+            onTap: () {
+              onPressed();
+            })
 
         // RaisedButton(
         //
@@ -74,9 +73,6 @@ import '../resources/app_colors.dart';
         //     ),
         //   ),
         // ),
-      );
-
-
-
-    }
+        );
+  }
 }

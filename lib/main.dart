@@ -14,6 +14,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+
+import 'admin/admin/views/login.dart';
 void main() async {
  WidgetsFlutterBinding.ensureInitialized();
   Get.log('starting services ...');
@@ -44,23 +46,41 @@ class MainApp extends StatefulWidget {
   State<MainApp> createState() => _MainAppState();
 }
 class _MainAppState extends State<MainApp> {
- 
+
 
   @override
   Widget build(BuildContext context) {
+
     final box = GetStorage();
-    ///en //ar //' '
     String email = box.read('email') ?? 'x';
-   return GetMaterialApp(
-       builder: BotToastInit(), // Initialize BotToast
-      navigatorObservers: [BotToastNavigatorObserver()], // Register BotToastObserver
-      home: AdminView(),
-        // translations: MyLocal(),
+    bool isLogin=box.read('login')??false;
+
+    if(isLogin){
+      return GetMaterialApp(
+        builder: BotToastInit(), // Initialize BotToast
+        navigatorObservers: [BotToastNavigatorObserver()], // Register BotToastObserver
+        home: AdminView(),
+        //AdminView(),
         translations: MyLocal(),
-        title: "Doctor",
+        //   title: "Doctor",
         debugShowCheckedModeBanner: false,
         defaultTransition: Transition.cupertino,
       );
+    }else{
+      return GetMaterialApp(
+        builder: BotToastInit(), // Initialize BotToast
+        navigatorObservers: [BotToastNavigatorObserver()], // Register BotToastObserver
+        home: AdminLogin(),
+        //AdminView(),
+        translations: MyLocal(),
+        //   title: "Doctor",
+        debugShowCheckedModeBanner: false,
+        defaultTransition: Transition.cupertino,
+      );
+    }
+
+
+    
   }
 }
 

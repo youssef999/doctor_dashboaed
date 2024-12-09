@@ -98,7 +98,7 @@ class __CustomLoadWidgetState extends State<_CustomLoadWidget>
               child: Text(
 
                 widget.msg ?? 'Loading..',
-                style:GoogleFonts.alexandria(fontSize: 20,)
+                style:GoogleFonts.cairo(fontSize: 20,)
               ),
             )
           ],

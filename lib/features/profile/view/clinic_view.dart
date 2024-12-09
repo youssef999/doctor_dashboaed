@@ -111,7 +111,7 @@ class ClinicView extends GetView<ProfileController> {
           child: Text(
             'تعديل',
             textAlign: TextAlign.center,
-            style: GoogleFonts.alexandria(
+            style: GoogleFonts.cairo(
               fontWeight: FontWeight.w700,
               fontSize: 17,
               height: 1.3,

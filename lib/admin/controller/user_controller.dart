@@ -11,6 +11,7 @@ class UserController extends GetxController{
 
   List<dynamic> userData=[];
   List<dynamic> userDetails=[];
+  RxString search = ''.obs;
 
   deleteUser(int id) async {
     var headers = {

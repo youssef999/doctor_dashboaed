@@ -1,12 +1,8 @@
-
-
-import 'package:doctor/admin/NUMBS/num_view.dart';
 import 'package:doctor/admin/comp/comp_view.dart';
 import 'package:doctor/admin/controller/admin_controller.dart';
 import 'package:doctor/admin/views/doctors_view.dart';
-import 'package:doctor/admin/views/mndob_view.dart';
 import 'package:doctor/admin/views/users_view.dart';
-import 'package:doctor/features/st/top_doc.dart';
+import 'package:doctor/admin/widget/custome_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,224 +18,91 @@ class AdminView extends StatefulWidget {
 }
 
 class _AdminViewState extends State<AdminView> {
-
-
-
- AdminController controller =Get.put(AdminController());
+  AdminController controller = Get.put(AdminController());
   final GlobalKey<FormState> formKey1 = GlobalKey<FormState>(); // Unique Key
   @override
   void initState() {
-  // controller.getData();
-   //controller.fetchData();
+    // controller.getData();
+    //controller.fetchData();
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
+      backgroundColor: Colors.white,
       key: formKey1,
-      appBar:CustomAppBar('DashBoard', context,false),
-      body:Padding(
+      appBar: CustomAppBar('DashBoard', context, false),
+      body: Padding(
         padding: const EdgeInsets.all(22.0),
-        child: ListView(children: [
-        
-          const SizedBox(height: 21),
-          Image.asset('assets/images/logo.png',height: 200,
-
-          ),
-          const SizedBox(height: 21),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-            InkWell(
-              child: SizedBox(
-                width: 311,
-                child: Card(
-                  color:Colors.green,
-                  child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child:Center(
-                    child: Text("المستخدمين",style:TextStyle(
-                      color:Colors.white,fontSize: 18
-                    ),),
-                  ),
-                ),),
-              ),
-              onTap: () {
-                Get.to(UsersView());
-              },
+        child: ListView(
+          children: [
+            const SizedBox(height: 21),
+            Image.asset(
+              'assets/images/logo.png',
+              height: screenWidth * .1,
             ),
-        
-             InkWell(
-               child: SizedBox(
-                 width: 311,
-                 child: Card(
-                    color:Colors.green,
-                    child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child:Center(
-                    child: Text("الأطباء",style:TextStyle(
-                      color:Colors.white,fontSize: 18
-                    ),),
+            const SizedBox(height: 21),
+            SizedBox(
+              child: GridView(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 5,
+                    mainAxisSpacing: 15,
+                    crossAxisSpacing: 20),
+                children: [
+                  CustomButtonV(
+                    text: 'الأطباء',
+                    onPressed: () {
+                      Get.to(() => DoctorsView());
+                    },
+                    img: 'assets/images/intro1.jpeg',
                   ),
-                           ),),
-               ),
-                         onTap:(){
-                          Get.to(doctorsView());
-                         },
-             )
-          ],),
-
-           SizedBox(height: 21,),
-
-        
-           Row(
-            mainAxisAlignment:MainAxisAlignment.spaceBetween,
-            children: [
-            InkWell(
-              child: SizedBox(
-                width: 311,
-                child: Card(
-                  color:Colors.green,
-                  child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child:Center(
-                    child: Text("الحجوزات",style:TextStyle(
-                      color:Colors.white,fontSize: 18
-                    ),),
+                  CustomButtonV(
+                    text: 'المستخدمين',
+                    onPressed: () {
+                      Get.to(() => UsersView());
+                    },
+                    img: 'assets/images/noChat.png',
                   ),
-                ),),
+                  CustomButtonV(
+                    text: 'الحجوزات',
+                    onPressed: () {
+                      Get.to(() => BookingsView());
+                    },
+                    img: 'assets/images/intro2.png',
+                  ),
+                  CustomButtonV(
+                    text: 'الاحصاءات',
+                    onPressed: () {
+                      Get.to(() => StView());
+                    },
+                    img: 'assets/images/intro3.jpeg',
+                  ),
+                  // CustomButtonV(
+                  //   text: 'الاعلي تقييما',
+                  //   onPressed: () {
+                  //     Get.to(TopDocView());
+                  //   },
+                  //   img: 'assets/images/otp.png',
+                  // ),
+                  CustomButtonV(
+                    text: 'عرض الشكاوي',
+                    onPressed: () {
+                      Get.to(() => CompView());
+                    },
+                    img: 'assets/images/intro3.jpeg',
+                  ),
+                ],
               ),
-              onTap: () {
-                Get.to( BookingsView());
-              //  Get.to(UsersView());
-              },
             ),
 
-              InkWell(
-                child: SizedBox(
-                  width: 311,
-                  child: Card(
-                    color:Colors.green,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child:Center(
-                        child: Text("الاحصاءات ",style:TextStyle(
-                            color:Colors.white,fontSize: 18
-                        ),),
-                      ),
-                    ),),
-                ),
-                onTap: () {
-
-                  Get.to(StView());
-
-
-                  //  Get.to(UsersView());
-                },
-              ),
-
-          ],),
-          SizedBox(height: 21,),
-          Row(
-            mainAxisAlignment:MainAxisAlignment.spaceBetween,
-            children: [
-              InkWell(
-                child: SizedBox(
-                  width: 311,
-                  child: Card(
-                    color:Colors.green,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child:Center(
-                        child: Text("الاطباء الاعلي تقييما ",style:TextStyle(
-                            color:Colors.white,fontSize: 18
-                        ),),
-                      ),
-                    ),),
-                ),
-                onTap: () {
-                  Get.to( TopDocView());
-                  //  Get.to(UsersView());
-                },
-              ),
-
-              InkWell(
-                child: SizedBox(
-                  width: 311,
-                  child: Card(
-                    color:Colors.green,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child:Center(
-                        child: Text("عرض الشكاوي ",style:TextStyle(
-                            color:Colors.white,fontSize: 18
-                        ),),
-                      ),
-                    ),),
-                ),
-                onTap: () {
-                  Get.to( CompView());
-                  //  Get.to(UsersView());
-                },
-              ),
-
-
-
-
-            ],),
-
-          SizedBox(height: 21,),
-          Row(
-            mainAxisAlignment:MainAxisAlignment.spaceBetween,
-            children: [
-              InkWell(
-                child: SizedBox(
-                  width: 311,
-                  child: Card(
-                    color:Colors.green,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child:Center(
-                        child: Text(" عدد المستخدمين و الاطباء ",style:TextStyle(
-                            color:Colors.white,fontSize: 18
-                        ),),
-                      ),
-                    ),),
-                ),
-                onTap: () {
-                  Get.to( NumView());
-                  //  Get.to(UsersView());
-                },
-              ),
-
-              InkWell(
-                child: SizedBox(
-                  width: 311,
-                  child: Card(
-                    color:Colors.green,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child:Center(
-                        child: Text("عرض الشكاوي ",style:TextStyle(
-                            color:Colors.white,fontSize: 18
-                        ),),
-                      ),
-                    ),),
-                ),
-                onTap: () {
-                  Get.to( CompView());
-                  //  Get.to(UsersView());
-                },
-              ),
-
-
-
-
-            ],),
-
-          //NumView
-          
-        ],),
+            //TopDocView
+          ],
+        ),
       ),
     );
   }

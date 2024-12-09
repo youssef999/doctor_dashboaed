@@ -27,7 +27,7 @@ class PatientsView extends GetView<PatientsController> {
                 onChanged: (value) async {},
                 decoration: InputDecoration(
                   hintText: 'ابحث',
-                  hintStyle: GoogleFonts.alexandria(
+                  hintStyle: GoogleFonts.cairo(
                       fontSize: 12, color: AppColors.greyColor.withOpacity(.4)),
                   prefixIconConstraints:
                       const BoxConstraints.expand(width: 30, height: 30),
@@ -94,7 +94,7 @@ class ContainButton extends StatelessWidget {
               children: [
                 Text(
                   name,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 12,
                       color: isLog == false
                           ? AppColors.darkColor

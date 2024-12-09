@@ -86,7 +86,7 @@ class PatientCart extends StatelessWidget {
               children: [
                 Text(
                   'بيانات المريض',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w600, fontSize: 12),
                 ),
               ],
@@ -121,7 +121,7 @@ class PatientCart extends StatelessWidget {
                         children: [
                           Text(
                             'حذف',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w600,
                               fontSize: 13,
                               color: Colors.red,
@@ -154,7 +154,7 @@ class PatientCart extends StatelessWidget {
                         children: [
                           Text(
                             'رساله',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w600,
                               fontSize: 13,
                               //color: Colors.red,
@@ -187,7 +187,7 @@ class PatientCart extends StatelessWidget {
                         children: [
                           Text(
                             'مكالمه',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w600,
                               fontSize: 13,
                               // color: Colors.red,
@@ -239,7 +239,7 @@ class TxtWidget extends StatelessWidget {
           children: [
             Text(
               'اسم المريض',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -247,7 +247,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
               'السن',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -255,7 +255,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
               'النوع',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -263,7 +263,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
               'الاعراض',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -271,7 +271,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
               'التأمين',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -279,7 +279,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
               'رقم الهاتف',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -294,14 +294,14 @@ class TxtWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text('ياسر علي',
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w600,
                   fontSize: 12,
                   color: const Color(0xFF000000),
                 )),
             Text(
              '28',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -309,7 +309,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
            'ذكر',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -317,7 +317,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
              'الام الظهر',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -325,7 +325,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
               '',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),
@@ -333,7 +333,7 @@ class TxtWidget extends StatelessWidget {
             ),
             Text(
              '01120007266',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 12,
                 color: AppColors.greyColor.withOpacity(.5),

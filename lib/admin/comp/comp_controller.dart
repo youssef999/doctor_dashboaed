@@ -6,10 +6,8 @@ import 'package:get/get.dart';
 
 class CompController extends GetxController{
 
-
-
   List<Map<String,dynamic>> data=[];
-
+  RxString search = ''.obs;
   Map<String,dynamic>numData={};
 
 //https://easy-systems.net/doctors/admin/get_nums.php

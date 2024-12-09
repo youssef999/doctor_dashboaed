@@ -12,6 +12,7 @@ class   BookingController extends GetxController{
 
 List<Map<String,dynamic>> data=[];
 
+  RxString search = ''.obs;
 
  Future<void> getData() async {
   print("GET DATA");

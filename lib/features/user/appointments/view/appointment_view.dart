@@ -33,7 +33,7 @@ class AppointmentView extends GetView<AppointmentController> {
                       onTap: (value) {
                         print('text $value');
                       },
-                      labelStyle: GoogleFonts.alexandria(
+                      labelStyle: GoogleFonts.cairo(
                           fontSize: 11, fontWeight: FontWeight.w500),
                       indicatorWeight: 0,
                       indicator: BoxDecoration(
@@ -263,7 +263,7 @@ class BookingCard extends StatelessWidget {
                 isCancelled
                     ? Text(
                         'تم الغاء',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w600,
                           fontSize: 10,
                           color: Colors.red,
@@ -277,7 +277,7 @@ class BookingCard extends StatelessWidget {
                     : const SizedBox(),
                 Text(
                   'كشف عيادة $bookingTime',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w600,
                     fontSize: 12,
                     color: !isCancelled
@@ -307,7 +307,7 @@ class BookingCard extends StatelessWidget {
                     children: [
                       Text(
                         doctorName,
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w600,
                           fontSize: 12,
                           color: const Color(0xFF000000),
@@ -315,7 +315,7 @@ class BookingCard extends StatelessWidget {
                       ),
                       Text(
                         doctorSpecialty,
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w400,
                           fontSize: 10,
                           color: AppColors.greyColor.withOpacity(0.4),
@@ -328,7 +328,7 @@ class BookingCard extends StatelessWidget {
                           const SizedBox(width: 5),
                           Text(
                             location,
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w400,
                               fontSize: 10,
                               color: AppColors.greyColor.withOpacity(0.4),
@@ -361,7 +361,7 @@ class BookingCard extends StatelessWidget {
                       child: Center(
                         child: Text(
                           'الغاء الحجز',
-                          style: GoogleFonts.alexandria(
+                          style: GoogleFonts.cairo(
                             fontWeight: FontWeight.w400,
                             fontSize: 10,
                             color: Colors.white,
@@ -383,7 +383,7 @@ class BookingCard extends StatelessWidget {
                         children: [
                           Text(
                             'الخريطه',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w400,
                               fontSize: 10,
                               color: Colors.white,
@@ -411,7 +411,7 @@ class BookingCard extends StatelessWidget {
                         children: [
                           Text(
                             'تعديل',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w400,
                               fontSize: 10,
                               color: Colors.white,
@@ -444,7 +444,7 @@ class BookingCard extends StatelessWidget {
                       child: Center(
                         child: Text(
                           'حذف',
-                          style: GoogleFonts.alexandria(
+                          style: GoogleFonts.cairo(
                             fontWeight: FontWeight.w400,
                             fontSize: 10,
                             color: Colors.white,
@@ -466,7 +466,7 @@ class BookingCard extends StatelessWidget {
                         children: [
                           Text(
                             'اعاده الحجز',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w400,
                               fontSize: 10,
                               color: Colors.white,
@@ -497,7 +497,7 @@ class BookingCard extends StatelessWidget {
                         children: [
                           Text(
                             'تعديل',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w400,
                               fontSize: 10,
                               color: Colors.white,

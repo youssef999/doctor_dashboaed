@@ -35,6 +35,7 @@ class DocController extends GetxController{
       print(response.reasonPhrase);
     }
   }
+  RxString search = ''.obs;
 
   Future<void> getDoctors() async {
     print("HERE USER DATA");

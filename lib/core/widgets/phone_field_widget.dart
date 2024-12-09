@@ -73,7 +73,7 @@ class PhoneFieldWidget extends StatelessWidget {
         children: [
           Text(
             labelText ?? "",
-            style: GoogleFonts.alexandria(fontWeight: FontWeight.bold,color: AppColors.primaryBGLightColor),
+            style: GoogleFonts.cairo(fontWeight: FontWeight.bold,color: AppColors.primaryBGLightColor),
             textAlign: textAlign,
           ),
           IntlPhoneField(

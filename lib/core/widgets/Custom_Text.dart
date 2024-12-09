@@ -24,7 +24,7 @@ class Custom_Text extends StatelessWidget {
     return 
      Text(  
         text,
-          style: GoogleFonts.alexandria(
+          style: GoogleFonts.cairo(
             color:color,
             fontSize: fontSize,
               fontWeight:fontWeight,

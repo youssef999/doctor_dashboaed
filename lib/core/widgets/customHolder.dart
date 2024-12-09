@@ -8,7 +8,7 @@ Widget CustomHolder(String text, String img) {
     children: [
       Image.asset(img),
       Text(text,
-          style: GoogleFonts.alexandria(
+          style: GoogleFonts.cairo(
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ))

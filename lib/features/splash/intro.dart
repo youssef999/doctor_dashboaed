@@ -52,7 +52,7 @@ class _IntroViewState extends State<IntroView> {
                 child: Center(
                   child: Text(
                     lang == 'ar' ? 'AR' : 'EN',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                         color: AppColors.primaryBGLightColor,
                         fontSize: 12,
                         fontWeight: FontWeight.w400),
@@ -167,7 +167,7 @@ class ButtonLogin extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           name,
-          style: GoogleFonts.alexandria(
+          style: GoogleFonts.cairo(
               color: frontColor, fontWeight: FontWeight.bold),
           textAlign: TextAlign.center,
         ),

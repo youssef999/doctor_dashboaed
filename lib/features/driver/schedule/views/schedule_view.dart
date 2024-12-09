@@ -41,7 +41,7 @@ class ScheduleView extends GetView<ScheduleController> {
     return ListTile(
       title: Text(
         title,
-        style: GoogleFonts.alexandria(
+        style: GoogleFonts.cairo(
           fontWeight: FontWeight.w500,
           fontSize: 13,
           color: Colors.black,
@@ -58,7 +58,7 @@ class ScheduleView extends GetView<ScheduleController> {
           ListTile(
             title: Text(
               day,
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 16,
                 color: Colors.black,
@@ -97,7 +97,7 @@ class ScheduleView extends GetView<ScheduleController> {
                 children: [
                   Text(
                     'فتره العمل',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w400,
                       fontSize: 13,
                       color: Colors.black,
@@ -116,7 +116,7 @@ class ScheduleView extends GetView<ScheduleController> {
                     children: [
                       Text(
                         '25 دقيقة',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontSize: 14,
                           color: Colors.black,
                         ),

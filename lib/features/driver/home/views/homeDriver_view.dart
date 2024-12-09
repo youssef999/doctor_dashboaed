@@ -55,7 +55,7 @@ Get.lazyPut(()=>HomeDriverController());
                   children: [
                     Text(
                       controller.doctor.value.name ?? '',
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w600,
                         fontSize: 15,
                         // height: 1.1,
@@ -65,7 +65,7 @@ Get.lazyPut(()=>HomeDriverController());
                     const SizedBox(height: 5),
                     Text(
                       controller.doctor.value.qualification ?? '',
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w400,
                         fontSize: 12,
                         // height: 1.3,
@@ -91,7 +91,7 @@ Get.lazyPut(()=>HomeDriverController());
                           indicatorSize: TabBarIndicatorSize.values[0],
                           labelColor: AppColors.mainly,
                           indicatorColor: Colors.blueAccent,
-                          labelStyle: GoogleFonts.alexandria(
+                          labelStyle: GoogleFonts.cairo(
                               fontSize: 12, fontWeight: FontWeight.bold),
                           indicatorWeight: 0,
                           indicator: BoxDecoration(
@@ -177,7 +177,7 @@ Get.lazyPut(()=>HomeDriverController());
                   ),
                   Text(
                     title,
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w400,
                       fontSize: 13,
                       // height: 1.3,
@@ -196,7 +196,7 @@ Get.lazyPut(()=>HomeDriverController());
               padding: const EdgeInsets.all(10.0),
               child: Text(
                 content,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 11,
                   // color: const Color(0xFF7D7D7D),
@@ -241,7 +241,7 @@ class RateDoctor extends StatelessWidget {
                     children: [
                       Text(
                         'هناء الطويل',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w500,
                           fontSize: 13,
                           color: Colors.black,
@@ -278,7 +278,7 @@ class RateDoctor extends StatelessWidget {
                       ),
                       Text(
                         'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w400,
                           fontSize: 8,
                           color: Colors.grey,
@@ -289,7 +289,7 @@ class RateDoctor extends StatelessWidget {
                 ),
                 Text(
                   'الاحد 13 يناير 2023',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w400,
                     fontSize: 10,
                     color: Colors.grey,
@@ -328,7 +328,7 @@ class Clinic extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 5, bottom: 5, right: 20),
                   child: Text(
                     'نقدم لكم احدث الاجهذه الموجودة في العيادة',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                         fontSize: 10, fontWeight: FontWeight.w600),
                   ),
                 ),
@@ -347,7 +347,7 @@ class Clinic extends StatelessWidget {
                           ),
                           Text(
                             'منذ ساعه',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                                 fontSize: 10,
                                 color: AppColors.greyColor.withOpacity(.3)),
                           )
@@ -362,7 +362,7 @@ class Clinic extends StatelessWidget {
                           ),
                           Text(
                             'مشاركه',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                                 fontSize: 10,
                                 color: AppColors.greyColor.withOpacity(.3)),
                           )

@@ -4,6 +4,7 @@ import 'package:doctor/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../Core/widgets/Custom_Text.dart';
 import '../../../core/widgets/custom_app_bar.dart';
@@ -142,7 +143,7 @@ class ProfileMenu extends StatelessWidget {
               Expanded(
                   child: Text(
                 text!,
-                style: const TextStyle(
+                style: GoogleFonts.cairo(
                     fontSize: 17,
                     color: Colors.black,
                     fontWeight: FontWeight.w600),

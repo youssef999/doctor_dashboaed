@@ -3,6 +3,7 @@ import 'package:doctor/core/widgets/custom_app_bar.dart';
 import 'package:doctor/features/st/st_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StView extends StatefulWidget {
   const StView({super.key});
@@ -35,94 +36,138 @@ class _StViewState extends State<StView> {
               Image.asset('assets/images/logo.png',height: 200,),
 
               SizedBox(height: 12,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                stCard('عدد الطلبات',controller.allData.toString()),
-
-                SizedBox(width: 41,),
-
-                stCard('عدد الطلبات التي تمت الموافقة',
-                    controller.successData.toString()),
-
-              ],),
+              Center(
+                child: Text('جميع الطلبات ',
+                style:TextStyle(color:Colors.black,
+                fontWeight: FontWeight.w700,fontSize: 24
+                ),
+                ),
+              ),
               SizedBox(height: 12,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
-                stCard(' عدد الطلبات المرفوضة ',controller.refusedData.toString()),
+
+              //  SizedBox(width: 41,),
+
+                stCard('الطلبات التي تمت الموافقة',
+                    controller.successData.toString()),
+                  SizedBox(width: 41,),
+                  stCard('  الطلبات المرفوضة ',controller.refusedData.toString()),
 
                   SizedBox(width: 41,),
 
-                stCard('عدد الطلبات قيد الموافقة ',
-                    controller.pendingData.toString()),
+                  stCard(' الطلبات قيد الموافقة',
+                      controller.pendingData.toString()),
+                  SizedBox(width: 41,),
+                  stCard('اجمالي الطلبات',controller.allData.toString()),
 
               ],),
+
               SizedBox(height: 12,),
               Divider(),
               SizedBox(height: 12,),
 
+              Center(
+                child: Text(' طلبات اخر يوم  ',
+                  style:TextStyle(color:Colors.black,
+                      fontWeight: FontWeight.w700,fontSize: 24
+                  ),
+                ),
+              ),
+              SizedBox(height: 12,),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  stCard(' عدد الطلبات المرفوضة اخر يوم',controller.lastDayRefusedData.toString()),
 
                   SizedBox(width: 21,),
 
-                  stCard('عدد الطلبات قيد الموافقة اخر يوم ',
+                  stCard('الطلبات قيد الموافقة اخر يوم',
                       controller.lastDayPendingData.toString()),
 
                   SizedBox(width: 21,),
 
-                  stCard('عدد الطلبات المرفوضة اخر يوم ',
+                  stCard('الطلبات المرفوضة اخر يوم',
                       controller.lastDayRefusedData.toString()),
 
                   SizedBox(width: 21,),
 
-                  stCard('عدد الطلبات المقبولة اخر يوم ',
+                  stCard('الطلبات المقبولة اخر يوم',
                       controller.lastDaySuccessData.toString()),
+                  SizedBox(width: 21,),
+                  stCard('الطلبات اخر يوم',
+                      controller.lastDayTotal.toString()),
                 ],),
 
               SizedBox(height: 12,),
               Divider(),
               SizedBox(height: 12,),
+
+              Center(
+                child: Text('طلبات اخر اسبوع',
+                  style:TextStyle(color:Colors.black,
+                      fontWeight: FontWeight.w700,fontSize: 24
+                  ),
+                ),
+              ),
+              SizedBox(height: 12,),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  stCard(' عدد الطلبات المرفوضة اخر اسبوع',controller.lastWeekRefusedData.toString()),
+                  stCard(' الطلبات المرفوضة اخر اسبوع',controller.lastWeekRefusedData.toString()),
 
                   SizedBox(width: 21,),
 
-                  stCard('عدد الطلبات قيد الموافقة اخر اسبوع ',
+                  stCard('الطلبات قيد الموافقة اخر اسبوع',
                       controller.lastWeekPendingData.toString()),
 
                   SizedBox(width: 21,),
 
 
-
-
-
-                  stCard('عدد الطلبات المقبولة اخر اسبوع ',
+                  stCard('الطلبات المقبولة اخر اسبوع',
                       controller.lastWeekSuccessData.toString()),
+
+                  SizedBox(width: 21,),
+
+
+                  stCard('الطلبات اخر اسبوع',
+                      controller.lastWeekTotal.toString()),
                 ],),
               SizedBox(height: 12,),
               Divider(),
               SizedBox(height: 12,),
+              Center(
+                child: Text('طلبات اخر شهر',
+                  style:TextStyle(color:Colors.black,
+                      fontWeight: FontWeight.w700,fontSize: 24
+                  ),
+                ),
+              ),
+              SizedBox(height: 12,),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  stCard(' عدد الطلبات المرفوضة اخر شهر',controller.lastMonthRefusedData.toString()),
+                  stCard('الطلبات المرفوضة اخر شهر',controller.lastMonthRefusedData.toString()),
 
                   SizedBox(width: 21,),
 
-                  stCard('عدد الطلبات قيد الموافقة اخر شهر ',
+                  stCard('الطلبات قيد الموافقة اخر شهر ',
                       controller.lastMonthPendingData.toString()),
 
                   SizedBox(width: 21,),
 
-                  stCard('عدد الطلبات المقبولة اخر شهر ',
+                  stCard('الطلبات المقبولة اخر شهر',
                       controller.lastMonthSuccessData.toString()),
+
+                  SizedBox(width: 21,),
+
+                  stCard('الطلبات اخر شهر',
+                      controller.lastMonthTotal.toString()),
+
                 ],),
 
 
@@ -137,7 +182,7 @@ class _StViewState extends State<StView> {
 Widget stCard(String txt,String num){
 
   return Container(
-    width:333,
+    width:341,
     height: 120,
     decoration: BoxDecoration(
       borderRadius:BorderRadius.circular(12),
@@ -147,13 +192,16 @@ Widget stCard(String txt,String num){
     child:Padding(padding: EdgeInsets.all(12),
     child: Column(children: [
 
-      Text(txt,style: TextStyle(
+      Text(txt,
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+      style: GoogleFonts.cairo(
           color:Colors.black,fontSize: 20,fontWeight: FontWeight.bold
       )),
 
       SizedBox(height: 9,),
 
-      Text(num,style: TextStyle(
+      Text(num,style: GoogleFonts.cairo(
           color:Colors.black,fontSize: 20,fontWeight: FontWeight.bold
       )),
 

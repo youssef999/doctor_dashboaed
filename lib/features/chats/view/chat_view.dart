@@ -77,14 +77,14 @@ class ChatMessageWidget extends StatelessWidget {
             children: [
               Text(
                 'دكتور علي الياسري',
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontSize: 8,
                     color: isSender == true ? Colors.white : AppColors.greyColor.withOpacity(.5)),
               ),
               SizedBox(height: 4,),
               Text(
                 message.text!,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontSize: 12,
                     color: isSender == true ? Colors.white : AppColors.darkColor),
               ),
@@ -207,7 +207,7 @@ class ChatInputField extends StatelessWidget {
                         decoration: InputDecoration(
                           hintText: 'مراسلهّ',
                           contentPadding: EdgeInsets.only(right: 20),
-                          hintStyle: GoogleFonts.alexandria(
+                          hintStyle: GoogleFonts.cairo(
                               fontSize: 12,
                               color: AppColors.greyColor.withOpacity(.3)),
                           border: OutlineInputBorder(

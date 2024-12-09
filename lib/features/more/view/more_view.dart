@@ -26,7 +26,7 @@ class MoreView extends GetView<MoreController> {
                 // Top Filters
                 Text(
                   'مرحبا بك ',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 15, fontWeight: FontWeight.w500),
                 ),
                 const SizedBox(
@@ -164,7 +164,7 @@ class MoreView extends GetView<MoreController> {
                         children: [
                           Text(
                             'تسجيل خروج',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 12,
                                 color: AppColors.whiteColor),
@@ -225,7 +225,7 @@ class ContainButton extends StatelessWidget {
                 ),
                 Text(
                   name,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 12,
                       color: isLog == false
                           ? AppColors.darkColor

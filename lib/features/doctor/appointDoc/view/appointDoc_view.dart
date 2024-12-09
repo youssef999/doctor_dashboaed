@@ -2,7 +2,6 @@ import 'package:doctor/core/resources/app_colors.dart';
 import 'package:doctor/core/widgets/custom_app_bar.dart';
 import 'package:doctor/features/doctor/appointDoc/controller/appointDoc_controller.dart';
 import 'package:doctor/features/doctor/appointDoc/view/submit.dart';
-import 'package:doctor/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -40,7 +39,7 @@ class AppointmentDoctorView extends GetView<AppointmentDoctorController> {
                       labelColor: AppColors.whiteColor,
                       //indicatorColor: Colors.blueAccent,
 
-                      labelStyle: GoogleFonts.alexandria(
+                      labelStyle: GoogleFonts.cairo(
                           fontSize: 13, fontWeight: FontWeight.w500),
                       indicatorWeight: 0,
                       indicator: BoxDecoration(
@@ -117,7 +116,7 @@ class AppointmentDoctorView extends GetView<AppointmentDoctorController> {
                                               controller.booking[index]
                                                       .userName ??
                                                   '',
-                                              style: GoogleFonts.alexandria(
+                                              style: GoogleFonts.cairo(
                                                 fontWeight: FontWeight.w500,
                                                 fontSize: 12,
                                                 color: Colors.black,
@@ -126,7 +125,7 @@ class AppointmentDoctorView extends GetView<AppointmentDoctorController> {
                                             Text(
                                               controller.booking[index].msg ??
                                                   '',
-                                              style: GoogleFonts.alexandria(
+                                              style: GoogleFonts.cairo(
                                                 fontWeight: FontWeight.w600,
                                                 fontSize: 10,
                                                 color: Colors.black,
@@ -148,7 +147,7 @@ class AppointmentDoctorView extends GetView<AppointmentDoctorController> {
                                             ),
                                             Text(
                                               '${controller.booking[index].time ?? ''} - ${controller.booking[index].date ?? ''}',
-                                              style: GoogleFonts.alexandria(
+                                              style: GoogleFonts.cairo(
                                                 fontWeight: FontWeight.w500,
                                                 fontSize: 12,
                                                 color: Colors.black,
@@ -179,7 +178,7 @@ class AppointmentDoctorView extends GetView<AppointmentDoctorController> {
                                 ),
                                 Text(
                                   'الحجوزات المعلقه',
-                                  style: GoogleFonts.alexandria(
+                                  style: GoogleFonts.cairo(
                                       fontWeight: FontWeight.w600,
                                       fontSize: 12,
                                       color: AppColors.darkColor),
@@ -268,14 +267,14 @@ class BookingCard extends StatelessWidget {
               children: [
                 Text(
                   'طلب حجز جديد',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w600,
                       fontSize: 12,
                       color: AppColors.darkColor),
                 ),
                 Text(
                   'غدا',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w600,
                       fontSize: 12,
                       color: AppColors.darkColor),
@@ -303,7 +302,7 @@ class BookingCard extends StatelessWidget {
                     children: [
                       Text(
                         patientName,
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w600,
                           fontSize: 12,
                           color: const Color(0xFF000000),
@@ -311,7 +310,7 @@ class BookingCard extends StatelessWidget {
                       ),
                       Text(
                         patientMsg,
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w400,
                           fontSize: 10,
                           color: AppColors.greyColor.withOpacity(0.4),
@@ -350,7 +349,7 @@ class BookingCard extends StatelessWidget {
                     child: Center(
                       child: Text(
                         'قبول',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w400,
                           fontSize: 13,
                           color: Colors.white,
@@ -378,7 +377,7 @@ class BookingCard extends StatelessWidget {
                     child: Center(
                       child: Text(
                         'رفض',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w400,
                           fontSize: 13,
                           color: AppColors.primaryBGLightColor,

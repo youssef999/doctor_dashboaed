@@ -28,10 +28,10 @@ class Ui {
     return GetSnackBar(
       titleText: Text(title.tr,
           style: Get.textTheme.titleLarge
-              ?.merge(GoogleFonts.alexandria(color: Colors.green))),
+              ?.merge(GoogleFonts.cairo(color: Colors.green))),
       messageText: Text(message!,
           style: Get.textTheme.bodySmall
-              ?.merge(GoogleFonts.alexandria(color: Colors.green))),
+              ?.merge(GoogleFonts.cairo(color: Colors.green))),
       snackPosition: SnackPosition.BOTTOM,
       margin: const EdgeInsets.all(20),
       backgroundColor: const Color.fromARGB(255, 237, 237, 237),
@@ -62,10 +62,10 @@ class Ui {
     return GetSnackBar(
       titleText: Text(title.tr,
           style: Get.textTheme.titleLarge
-              ?.merge(GoogleFonts.alexandria(color: Colors.red))),
+              ?.merge(GoogleFonts.cairo(color: Colors.red))),
       messageText: Text(message!.substring(0, min(message.length, 200)),
           style: Get.textTheme.bodySmall
-              ?.merge(GoogleFonts.alexandria(color: Get.theme.primaryColor))),
+              ?.merge(GoogleFonts.cairo(color: Get.theme.primaryColor))),
       snackPosition: SnackPosition.BOTTOM,
       margin: const EdgeInsets.all(20),
       backgroundColor: const Color.fromARGB(255, 237, 237, 237),
@@ -98,9 +98,9 @@ boxShadows: [
     return GetSnackBar(
       titleText: Text(title.tr,
           style: Get.textTheme.titleLarge
-              ?.merge(GoogleFonts.alexandria(color: Get.theme.hintColor))),
+              ?.merge(GoogleFonts.cairo(color: Get.theme.hintColor))),
       messageText: Text(message!,
-          style: Get.textTheme.bodySmall?.merge(GoogleFonts.alexandria(
+          style: Get.textTheme.bodySmall?.merge(GoogleFonts.cairo(
               color: Get.theme.focusColor, fontWeight: FontWeight.bold))),
       snackPosition: SnackPosition.BOTTOM,
       margin: const EdgeInsets.all(20),
@@ -125,10 +125,10 @@ boxShadows: [
       mainButton: mainButton,
       titleText: Text(title.tr,
           style: Get.textTheme.titleLarge
-              ?.merge(GoogleFonts.alexandria(color: Get.theme.hintColor))),
+              ?.merge(GoogleFonts.cairo(color: Get.theme.hintColor))),
       messageText: Text(message!,
           style: Get.textTheme.bodySmall
-              ?.merge(GoogleFonts.alexandria(color: Get.theme.focusColor))),
+              ?.merge(GoogleFonts.cairo(color: Get.theme.focusColor))),
       snackPosition: SnackPosition.TOP,
       margin: const EdgeInsets.all(20),
       backgroundColor: Get.theme.primaryColor,
@@ -168,7 +168,7 @@ boxShadows: [
   }
 
   static TextStyle getPriceStyle(TextStyle style) {
-    return style.merge(GoogleFonts.alexandria(
+    return style.merge(GoogleFonts.cairo(
         fontWeight: FontWeight.w300, fontSize: style.fontSize! - 4));
   }
 
@@ -198,7 +198,7 @@ boxShadows: [
       Widget? suffix}) {
     return InputDecoration(
       hintText: hintText,
-      hintStyle: GoogleFonts.alexandria(color: colors),
+      hintStyle: GoogleFonts.cairo(color: colors),
       prefixIcon: iconData ?? const SizedBox(),
       prefixIconConstraints: iconData != null
           ? const BoxConstraints.expand(width: 38, height: 38)

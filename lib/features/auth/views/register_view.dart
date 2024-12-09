@@ -30,7 +30,7 @@ class RegisterView extends GetView<AuthController> {
                 Text(
                   'انشاء حساب جديد',
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w600,
                     fontSize: 22,
                     height: 1.1,
@@ -41,7 +41,7 @@ class RegisterView extends GetView<AuthController> {
                 Text(
                   'اضف المعلومات الشخصية',
                   textAlign: TextAlign.start,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w600,
                     fontSize: 20,
                     // height: 1.1,
@@ -54,7 +54,7 @@ class RegisterView extends GetView<AuthController> {
                 Text(
                   'يرجي تعبئة المعلومات التالية لانشاء الحساب',
                   textAlign: TextAlign.start,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w400,
                     fontSize: 15,
                     // height: 1.3,
@@ -127,7 +127,7 @@ class RegisterView extends GetView<AuthController> {
                       onTap: () {},
                       child: Text(
                         'اوافق علي الشروط و الاحكام',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w400,
                           fontSize: 15,
                           decoration: TextDecoration.underline,
@@ -143,7 +143,7 @@ class RegisterView extends GetView<AuthController> {
                   children: [
                     Text(
                       'ذكر',
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
                         height: 1.5,
@@ -161,7 +161,7 @@ class RegisterView extends GetView<AuthController> {
                     ),
                     Text(
                       'أنثي',
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w400,
                         fontSize: 15,
                         height: 1.5,
@@ -201,7 +201,7 @@ class RegisterView extends GetView<AuthController> {
                     child: Text(
                       'انشاء حساب',
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w700,
                         fontSize: 17,
                         height: 1.3,

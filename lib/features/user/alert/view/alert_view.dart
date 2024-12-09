@@ -54,7 +54,7 @@ class AlertView extends GetView<AlertController> {
                                 children: [
                                   Text(
                                     'اسم الدواء',
-                                    style: GoogleFonts.alexandria(),
+                                    style: GoogleFonts.cairo(),
                                   ),
                                   const SizedBox(
                                     width: 5,
@@ -69,7 +69,7 @@ class AlertView extends GetView<AlertController> {
                               ),
                               Text(
                                 'اليوم 5:00 مساء',
-                                style: GoogleFonts.alexandria(
+                                style: GoogleFonts.cairo(
                                     fontSize: 10,
                                     color: AppColors.greyColor.withOpacity(.4)),
                               ),
@@ -81,7 +81,7 @@ class AlertView extends GetView<AlertController> {
                                     borderRadius: BorderRadius.circular(3)),
                                 child: Text(
                                   'حبه واحده يوميا',
-                                  style: GoogleFonts.alexandria(
+                                  style: GoogleFonts.cairo(
                                       color: AppColors.whiteColor,
                                       fontSize: 10),
                                 ),
@@ -131,7 +131,7 @@ class AlertView extends GetView<AlertController> {
                   Text(
                     'اضافه المنبه',
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w700,
                       fontSize: 17,
                       height: 1.3,

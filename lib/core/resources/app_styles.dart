@@ -20,6 +20,7 @@ class AppTextStyles {
     );
   }
 
+
   static TextStyle headingStyles(
       {double fontSize = 36, Color color = Colors.white}) {
     return GoogleFonts.rubikMoonrocks(
@@ -29,6 +30,7 @@ class AppTextStyles {
       letterSpacing: 2,
     );
   }
+
 
   static TextStyle normalStyle(
       {Color color = Colors.white, double fontSize = 19}) {

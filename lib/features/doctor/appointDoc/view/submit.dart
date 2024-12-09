@@ -36,7 +36,7 @@ class SubmitAppointmentView extends GetView<AppointmentDoctorController> {
                     child: Text(
                       'تحديد موعد مع المريض',
                       style:
-                          GoogleFonts.alexandria(fontWeight: FontWeight.w500),
+                          GoogleFonts.cairo(fontWeight: FontWeight.w500),
                     ),
                   ),
                   CustomTextFormFieldV2(
@@ -121,7 +121,7 @@ class SubmitAppointmentView extends GetView<AppointmentDoctorController> {
                           child: Text(
                             'تاكيد',
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w700,
                               fontSize: 17,
                               height: 1.3,
@@ -142,13 +142,13 @@ class SubmitAppointmentView extends GetView<AppointmentDoctorController> {
                             ),
                             Text(
                               'تم الحجز بنجاح',
-                              style: GoogleFonts.alexandria(
+                              style: GoogleFonts.cairo(
                                   fontWeight: FontWeight.w500),
                             ),
                             const SizedBox(height: 10,),
                             Text(
                               'بتاريخ  8مارس الساعة 2:30',
-                              style: GoogleFonts.alexandria(
+                              style: GoogleFonts.cairo(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 14,
                                 color: const Color.fromARGB(255, 173, 173, 173),
@@ -171,7 +171,7 @@ class SubmitAppointmentView extends GetView<AppointmentDoctorController> {
                                   child: Text(
                                     'قائمه الحجوزات',
                                     textAlign: TextAlign.center,
-                                    style: GoogleFonts.alexandria(
+                                    style: GoogleFonts.cairo(
                                       fontWeight: FontWeight.w500,
                                       fontSize: 12,
                       
@@ -202,7 +202,7 @@ class SubmitAppointmentView extends GetView<AppointmentDoctorController> {
                                   child: Text(
                                     'الحجوزات المعلقه',
                                     textAlign: TextAlign.center,
-                                    style: GoogleFonts.alexandria(
+                                    style: GoogleFonts.cairo(
                                       fontWeight: FontWeight.w500,
                                       fontSize: 12,
                                       color: const Color.fromARGB(

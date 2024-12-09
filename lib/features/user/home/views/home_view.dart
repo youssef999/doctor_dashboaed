@@ -50,7 +50,7 @@ class HomeView extends GetView<HomeController> {
                 children: [
                   Text(
                     controller.users.value.name ?? '',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w700,
                       fontSize: 16,
                       color: Colors.black,
@@ -58,7 +58,7 @@ class HomeView extends GetView<HomeController> {
                   ),
                   Text(
                     'العراق، صلاح الدين',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w400,
                       fontSize: 12,
                       color: Colors.grey,
@@ -86,7 +86,7 @@ class HomeView extends GetView<HomeController> {
                   },
                   decoration: InputDecoration(
                     hintText: 'ابحث بالتخصص، اسم الدكتور او العيادة',
-                    hintStyle: GoogleFonts.alexandria(
+                    hintStyle: GoogleFonts.cairo(
                         fontSize: 12,
                         color: AppColors.greyColor.withOpacity(.4)),
                     prefixIconConstraints:
@@ -169,7 +169,7 @@ class HomeView extends GetView<HomeController> {
             padding: const EdgeInsets.only(right: 20.0, left: 20),
             child: Text(
               'التخصصات',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w600,
                 fontSize: 15,
                 color: Colors.black,
@@ -248,7 +248,7 @@ class HomeView extends GetView<HomeController> {
                   children: [
                     Text(
                       'الأطباء القريبين منك',
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w500,
                         fontSize: 12,
                         color: AppColors.primaryBGLightColor,
@@ -343,7 +343,7 @@ class HomeView extends GetView<HomeController> {
             padding: const EdgeInsets.only(right: 20, left: 20),
             child: Text(
               'اراء و التعليقات',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w700,
                 fontSize: 16,
                 color: Colors.black,
@@ -432,7 +432,7 @@ class HomeView extends GetView<HomeController> {
             const SizedBox(height: 5),
             Text(
               title,
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w500,
                 fontSize: 12,
                 color: Colors.black,
@@ -485,7 +485,7 @@ class HomeView extends GetView<HomeController> {
                     child: Text(
                       'احجز الان',
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                           color: AppColors.whiteColor, fontSize: 12),
                     ),
                   ),
@@ -500,7 +500,7 @@ class HomeView extends GetView<HomeController> {
             children: [
               Text(
                 name,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w500,
                   fontSize: 12,
                   color: Colors.black,
@@ -508,7 +508,7 @@ class HomeView extends GetView<HomeController> {
               ),
               Text(
                 specialty,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 8,
                   color: Colors.black,
@@ -519,7 +519,7 @@ class HomeView extends GetView<HomeController> {
                   const Icon(Icons.star, color: Colors.yellow, size: 14),
                   Text(
                     rating.toString(),
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w500,
                       fontSize: 12,
                       color: Colors.black,
@@ -529,7 +529,7 @@ class HomeView extends GetView<HomeController> {
               ),
               Text(
                 'سعر الكشف $price دينار',
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 12,
                   color: Colors.black,
@@ -537,7 +537,7 @@ class HomeView extends GetView<HomeController> {
               ),
               Text(
                 location,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 12,
                   color: Colors.grey,
@@ -603,7 +603,7 @@ class HomeView extends GetView<HomeController> {
               children: [
                 Text(
                   name,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w500,
                     fontSize: 12,
                     color: Colors.black,
@@ -611,7 +611,7 @@ class HomeView extends GetView<HomeController> {
                 ),
                 Text(
                   specialty,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w400,
                     fontSize: 8,
                     color: Colors.black,
@@ -622,7 +622,7 @@ class HomeView extends GetView<HomeController> {
                     const Icon(Icons.star, color: Colors.yellow, size: 14),
                     Text(
                       rating.toString(),
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w500,
                         fontSize: 12,
                         color: Colors.black,
@@ -632,7 +632,7 @@ class HomeView extends GetView<HomeController> {
                 ),
                 Text(
                   'سعر الكشف $price دينار',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                     color: Colors.black,
@@ -640,7 +640,7 @@ class HomeView extends GetView<HomeController> {
                 ),
                 Text(
                   location,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                     fontWeight: FontWeight.w400,
                     fontSize: 12,
                     color: Colors.grey,
@@ -683,7 +683,7 @@ class HomeView extends GetView<HomeController> {
             children: [
               Text(
                 name,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w500,
                   fontSize: 13,
                   color: Colors.black,
@@ -700,7 +700,7 @@ class HomeView extends GetView<HomeController> {
               ),
               Text(
                 review,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 8,
                   color: Colors.grey,

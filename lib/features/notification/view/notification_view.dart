@@ -76,7 +76,7 @@ class NotificationView extends GetView<NotificationController> {
                                             controller.notification[index]
                                                     .message ??
                                                 '',
-                                            style: GoogleFonts.alexandria(
+                                            style: GoogleFonts.cairo(
                                               fontWeight: FontWeight.w600,
                                               fontSize: 12,
                                               color: const Color(0xFF000000),
@@ -87,7 +87,7 @@ class NotificationView extends GetView<NotificationController> {
                                           ),
                                           Text(
                                             'هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة!',
-                                            style: GoogleFonts.alexandria(
+                                            style: GoogleFonts.cairo(
                                               fontWeight: FontWeight.w400,
                                               fontSize: 10,
                                               color: AppColors.greyColor,
@@ -100,7 +100,7 @@ class NotificationView extends GetView<NotificationController> {
                                       children: [
                                         Text(
                                           'منذ ساعة',
-                                          style: GoogleFonts.alexandria(
+                                          style: GoogleFonts.cairo(
                                             fontWeight: FontWeight.w400,
                                             fontSize: 10,
                                             color: AppColors.greyColor

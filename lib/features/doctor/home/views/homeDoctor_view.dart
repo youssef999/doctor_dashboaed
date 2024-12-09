@@ -53,7 +53,7 @@ class HomeDoctorView extends GetView<HomeDoctorController> {
                       right: 150,
                       child: Text(
                         controller.doctor.value.name ?? '',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w600,
                           fontSize: 15,
                           // height: 1.1,
@@ -66,7 +66,7 @@ class HomeDoctorView extends GetView<HomeDoctorController> {
                       right: 150,
                       child: Text(
                         controller.doctor.value.qualification ?? '',
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                           fontWeight: FontWeight.w400,
                           fontSize: 12,
                           // height: 1.3,
@@ -99,7 +99,7 @@ class HomeDoctorView extends GetView<HomeDoctorController> {
                         indicatorSize: TabBarIndicatorSize.values[0],
                         labelColor: AppColors.mainly,
                         indicatorColor: Colors.blueAccent,
-                        labelStyle: GoogleFonts.alexandria(
+                        labelStyle: GoogleFonts.cairo(
                             fontSize: 12, fontWeight: FontWeight.bold),
                         indicatorWeight: 0,
                         indicator: BoxDecoration(
@@ -222,7 +222,7 @@ class HomeDoctorView extends GetView<HomeDoctorController> {
                   ),
                   Text(
                     title,
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w400,
                       fontSize: 13,
                       // height: 1.3,
@@ -241,7 +241,7 @@ class HomeDoctorView extends GetView<HomeDoctorController> {
               padding: const EdgeInsets.all(10.0),
               child: Text(
                 content,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 11,
                   // color: const Color(0xFF7D7D7D),
@@ -277,7 +277,7 @@ class HomeDoctorView extends GetView<HomeDoctorController> {
                   ),
                   Text(
                     title,
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w400,
                       fontSize: 13,
                       // height: 1.3,
@@ -307,7 +307,7 @@ class HomeDoctorView extends GetView<HomeDoctorController> {
                     child: Center(
                       child: Text(
                         content[index],
-                        style: GoogleFonts.alexandria(
+                        style: GoogleFonts.cairo(
                             fontWeight: FontWeight.w400,
                             fontSize: 11,
                             color: AppColors.whiteColor),

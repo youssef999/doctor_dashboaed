@@ -18,17 +18,20 @@ class StController extends GetxController{
   int lastDaySuccessData = 0;
   int lastDayRefusedData = 0;
   int lastDayPendingData = 0;
+  int lastDayTotal = 0;
 
 
 
   int lastMonthSuccessData = 0;
   int lastMonthRefusedData = 0;
   int lastMonthPendingData = 0;
+  int lastMonthTotal = 0;
 
 
   int lastWeekSuccessData = 0;
   int lastWeekRefusedData = 0;
   int lastWeekPendingData = 0;
+  int lastWeekTotal = 0;
 
 
   Future<void> getStData() async{
@@ -57,6 +60,7 @@ class StController extends GetxController{
         refusedData = int.parse(data['refused_bookings']);
         allData = int.parse(data['total_bookings']);
 
+        lastDayTotal = int.parse(data['total_last_day']);
 
         lastDayPendingData = int.parse(data['pending_last_day']);
         lastDaySuccessData = int.parse(data['successful_last_day']);
@@ -66,11 +70,13 @@ class StController extends GetxController{
         lastWeekPendingData = int.parse(data['pending_last_week']);
         lastWeekSuccessData = int.parse(data['successful_last_week']);
         lastWeekRefusedData = int.parse(data['refused_last_week']);
+        lastWeekTotal= int.parse(data['total_last_week']);
 
 
         lastMonthPendingData = int.parse(data['pending_last_month']);
         lastMonthSuccessData = int.parse(data['successful_last_month']);
         lastMonthRefusedData = int.parse(data['refused_last_month']);
+        lastMonthTotal = int.parse(data['total_last_month']);
 
 
         update();

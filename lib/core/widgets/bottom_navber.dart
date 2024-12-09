@@ -80,7 +80,7 @@ bottomItemWidget(String icon, bottomNavBarController, page, Color color,
             SizedBox(height: 2,),
             Text(
               name,
-              style: GoogleFonts.alexandria(fontSize: 10),
+              style: GoogleFonts.cairo(fontSize: 10),
             )
           ],
         )),

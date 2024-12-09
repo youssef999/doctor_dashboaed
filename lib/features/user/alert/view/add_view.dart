@@ -23,7 +23,7 @@ class AddAlertView extends GetView<AlertController> {
           children: [
             Text(
               'اسم الدواء',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w400,
                 fontSize: 14,
                 // height: 1.3,
@@ -35,7 +35,7 @@ class AddAlertView extends GetView<AlertController> {
               controller: controller.medicineNameController,
               decoration: InputDecoration(
                 hintText: 'ادخل اسم الدواء',
-                hintStyle: GoogleFonts.alexandria(
+                hintStyle: GoogleFonts.cairo(
                     fontSize: 12, color: AppColors.greyColor.withOpacity(.4)),
                 enabledBorder: OutlineInputBorder(
                     borderSide:
@@ -51,7 +51,7 @@ class AddAlertView extends GetView<AlertController> {
             const SizedBox(height: 16),
             Text(
               'مواعيد استعمال الدواء',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w400,
                 fontSize: 14,
                 color: const Color(0xFF000000),
@@ -66,12 +66,12 @@ class AddAlertView extends GetView<AlertController> {
                     ? null
                     : controller.selectedQuantity.value,
                 hint: const Text('اختر الكمية'),
-                style: GoogleFonts.alexandria(color: AppColors.darkColor),
+                style: GoogleFonts.cairo(color: AppColors.darkColor),
                 items: ['1', '2', '3', '4', '5']
                     .map((quantity) => DropdownMenuItem(
                           value: quantity,
                           child: Text(quantity,
-                              style: GoogleFonts.alexandria(
+                              style: GoogleFonts.cairo(
                                   color: AppColors.darkColor)),
                         ))
                     .toList(),
@@ -95,7 +95,7 @@ class AddAlertView extends GetView<AlertController> {
             const SizedBox(height: 16),
             Text(
               'موعد استعمال الدواء',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w400,
                 fontSize: 14,
                 color: const Color(0xFF000000),
@@ -124,7 +124,7 @@ class AddAlertView extends GetView<AlertController> {
                         controller.selectedTime.value.hour,
                         controller.selectedTime.value.minute,
                       )),
-                      hintStyle: GoogleFonts.alexandria(),
+                      hintStyle: GoogleFonts.cairo(),
                       enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
                               color: AppColors.greyColor.withOpacity(.1))),
@@ -143,7 +143,7 @@ class AddAlertView extends GetView<AlertController> {
             const SizedBox(height: 16),
             Text(
               'الكمية',
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w400,
                 fontSize: 14,
                 color: const Color(0xFF000000),
@@ -152,7 +152,7 @@ class AddAlertView extends GetView<AlertController> {
             const SizedBox(height: 8),
             Obx(() {
               return DropdownButtonFormField<String>(
-                style: GoogleFonts.alexandria(color: AppColors.darkColor),
+                style: GoogleFonts.cairo(color: AppColors.darkColor),
                 value: controller.selectedQuantity.value.isEmpty
                     ? null
                     : controller.selectedQuantity.value,
@@ -162,7 +162,7 @@ class AddAlertView extends GetView<AlertController> {
                     .map((quantity) => DropdownMenuItem(
                           value: quantity,
                           child: Text(quantity,
-                              style: GoogleFonts.alexandria(
+                              style: GoogleFonts.cairo(
                                   color: AppColors.darkColor)),
                         ))
                     .toList(),
@@ -194,7 +194,7 @@ class AddAlertView extends GetView<AlertController> {
                       borderRadius: BorderRadius.circular(15))),
               child: Text(
                 'إيقاف المنبه',
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w700,
                   fontSize: 18,
                   height: 1.3,
@@ -220,7 +220,7 @@ class AddAlertView extends GetView<AlertController> {
           // icon: Icon(Icons.alarm_add,color: AppColors.whiteColor,),
           child: Text(
             'إضافة المنبه',
-            style: GoogleFonts.alexandria(
+            style: GoogleFonts.cairo(
               fontWeight: FontWeight.w700,
               fontSize: 18,
               // height: 1.3,

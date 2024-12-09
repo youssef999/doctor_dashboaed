@@ -42,7 +42,7 @@ class LoginView extends GetView<AuthController> {
                         RichText(
                           textAlign: TextAlign.center,
                           text: TextSpan(
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w600,
                               fontSize: 25,
                               height: 1.1,
@@ -51,7 +51,7 @@ class LoginView extends GetView<AuthController> {
                             children: [
                               TextSpan(
                                 text: 'مرحبا بك',
-                                style: GoogleFonts.alexandria(
+                                style: GoogleFonts.cairo(
                                   fontWeight: FontWeight.w600,
                                   fontSize: 25,
                                   height: 1.3,
@@ -59,7 +59,7 @@ class LoginView extends GetView<AuthController> {
                               ),
                               TextSpan(
                                 text: '..',
-                                style: GoogleFonts.alexandria(
+                                style: GoogleFonts.cairo(
                                   fontWeight: FontWeight.w400,
                                   fontSize: 25,
                                   height: 1.3,
@@ -67,7 +67,7 @@ class LoginView extends GetView<AuthController> {
                               ),
                               TextSpan(
                                 text: ' ',
-                                style: GoogleFonts.alexandria(
+                                style: GoogleFonts.cairo(
                                   fontWeight: FontWeight.w600,
                                   fontSize: 25,
                                   height: 1.3,
@@ -89,7 +89,7 @@ class LoginView extends GetView<AuthController> {
                       children: [
                         Text(
                           'login'.tr,
-                          style: GoogleFonts.alexandria(
+                          style: GoogleFonts.cairo(
                             fontWeight: FontWeight.w600,
                             fontSize: 20,
                             //  height: 1.3,
@@ -135,7 +135,7 @@ class LoginView extends GetView<AuthController> {
                         },
                         child: Text(
                           'نسيت كلمة السر',
-                          style: GoogleFonts.alexandria(
+                          style: GoogleFonts.cairo(
                             fontWeight: FontWeight.w400,
                             fontSize: 15,
                             decoration: TextDecoration.underline,
@@ -165,7 +165,7 @@ class LoginView extends GetView<AuthController> {
                         child: Text(
                           'تسجيل الدخول',
                           textAlign: TextAlign.center,
-                          style: GoogleFonts.alexandria(
+                          style: GoogleFonts.cairo(
                             fontWeight: FontWeight.w700,
                             fontSize: 17,
                             height: 1.3,
@@ -207,7 +207,7 @@ class LoginView extends GetView<AuthController> {
                             children: [
                               Text(
                                 'جوجل',
-                                style: GoogleFonts.alexandria(
+                                style: GoogleFonts.cairo(
                                   fontWeight: FontWeight.w400,
                                   fontSize: 15,
                                   height: 1.5,
@@ -237,7 +237,7 @@ class LoginView extends GetView<AuthController> {
                             children: [
                               Text(
                                 'فيسبوك',
-                                style: GoogleFonts.alexandria(
+                                style: GoogleFonts.cairo(
                                   fontWeight: FontWeight.w400,
                                   fontSize: 15,
                                   height: 1.5,

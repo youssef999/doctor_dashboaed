@@ -32,7 +32,7 @@ class PopupView extends StatelessWidget {
                 title: Center(
                   child: Text(
                     'حدد بحثك',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w600,
                       fontSize: 20,
                       color: const Color(0xFF000000),
@@ -96,7 +96,7 @@ class PopupView extends StatelessWidget {
                   ),
                   child: Text(
                     'البحث',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w700,
                       fontSize: 18,
                       color: const Color(0xFFFFFFFF),
@@ -120,7 +120,7 @@ class PopupView extends StatelessWidget {
         children: [
           Text(
             title,
-            style: GoogleFonts.alexandria(
+            style: GoogleFonts.cairo(
               fontWeight: FontWeight.w600,
               fontSize: 13,
               color: const Color(0xFF000000),
@@ -139,7 +139,7 @@ class PopupView extends StatelessWidget {
                     child: ChoiceChip(
                       label: Text(
                         option,
-                        style: GoogleFonts.alexandria(),
+                        style: GoogleFonts.cairo(),
                       ),
                       selected: selectedOption.value == option,
                       onSelected: (isSelected) {
@@ -154,7 +154,7 @@ class PopupView extends StatelessWidget {
                       //shape:LinearBorder(),
                       backgroundColor: Colors.white,
                       labelPadding: EdgeInsets.only(left: 15, right: 15),
-                      labelStyle: GoogleFonts.alexandria(
+                      labelStyle: GoogleFonts.cairo(
                         color: selectedOption.value == option
                             ? AppColors.whiteColor
                             : Colors.black,
@@ -178,7 +178,7 @@ class PopupView extends StatelessWidget {
         children: [
           Text(
             'سعر الكشف',
-            style: GoogleFonts.alexandria(
+            style: GoogleFonts.cairo(
               fontWeight: FontWeight.w600,
               fontSize: 16,
               color: const Color(0xFF000000),
@@ -251,7 +251,7 @@ class PopupView extends StatelessWidget {
                   size: 19,
                   color: Colors.black45,
                 ),
-                textStyle: const TextStyle(fontSize: 17, color: Colors.black45),
+                textStyle: GoogleFonts.cairo(fontSize: 17, color: Colors.black45),
               ),
 
               hatchMark: FlutterSliderHatchMark(
@@ -264,11 +264,11 @@ class PopupView extends StatelessWidget {
                       percent: 0,
                       label: Text(
                         '100 IQD',
-                        style: GoogleFonts.alexandria(),
+                        style: GoogleFonts.cairo(),
                       )),
                   FlutterSliderHatchMarkLabel(
                       percent: 100,
-                      label: Text('500 IQD', style: GoogleFonts.alexandria())),
+                      label: Text('500 IQD', style: GoogleFonts.cairo())),
                 ],
               ),
             );

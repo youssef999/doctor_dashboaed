@@ -109,7 +109,7 @@ class HomeController extends GetxController {
                         title: Center(
                           child: Text(
                             'حدد بحثك',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               fontWeight: FontWeight.w600,
                               fontSize: 20,
                               color: const Color(0xFF000000),
@@ -257,7 +257,7 @@ class HomeController extends GetxController {
                     child: Text(
                       'احجز الان',
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                           color: AppColors.whiteColor, fontSize: 12),
                     ),
                   ),
@@ -272,7 +272,7 @@ class HomeController extends GetxController {
             children: [
               Text(
                 name,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w500,
                   fontSize: 12,
                   color: Colors.black,
@@ -280,7 +280,7 @@ class HomeController extends GetxController {
               ),
               Text(
                 specialty,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 8,
                   color: Colors.black,
@@ -291,7 +291,7 @@ class HomeController extends GetxController {
                   const Icon(Icons.star, color: Colors.yellow, size: 14),
                   Text(
                     rating.toString(),
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w500,
                       fontSize: 12,
                       color: Colors.black,
@@ -301,7 +301,7 @@ class HomeController extends GetxController {
               ),
               Text(
                 'سعر الكشف $price دينار',
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 12,
                   color: Colors.black,
@@ -309,7 +309,7 @@ class HomeController extends GetxController {
               ),
               Text(
                 location,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                   fontWeight: FontWeight.w400,
                   fontSize: 12,
                   color: Colors.grey,

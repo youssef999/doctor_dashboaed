@@ -63,7 +63,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         child: Center(
                           child: Text(
                             'تخطي',
-                            style: GoogleFonts.alexandria(
+                            style: GoogleFonts.cairo(
                               color: AppColors.primaryBGLightColor,
                                 fontSize: 10, fontWeight: FontWeight.w700),
                           ),
@@ -139,7 +139,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               },
                               child: Text(
                                 "التالي",
-                                style: GoogleFonts.alexandria(
+                                style: GoogleFonts.cairo(
                                     color: Colors.white,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
@@ -199,7 +199,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           currentPage.value == 0
               ? Text(
                   'احصل عل رعاية صحية في منزلك',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 20, fontWeight: FontWeight.w700),
                 )
               : const SizedBox(),
@@ -212,7 +212,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ? Text(
                   'احصل على الرعاية التي تحتاجها من راحة منزلك بميزة زيارتنا الافتراضية.',
                      textAlign: TextAlign.center,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 16,
                       color: const Color.fromRGBO(144, 144, 144, 1)),
                 )
@@ -220,7 +220,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           currentPage.value == 1
               ? Text(
                   'تبسيط الرعاية الصحية الخاصة بك',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 20, fontWeight: FontWeight.w700),
                 )
               : const SizedBox(),
@@ -233,7 +233,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ? Text(
                   'حجز المواعيد ، وتتبع تاريخك الطبي ، والتواصل مع طبيبك في تطبيق واحد مناسب.',
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 16,
                       color: const Color.fromRGBO(144, 144, 144, 1)),
                 )
@@ -241,7 +241,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           currentPage.value == 2
               ? Text(
                   'ابحث عن مزودك المثالي',
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 20, fontWeight: FontWeight.w700),
                 )
               : const SizedBox(),
@@ -254,7 +254,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ? Text(
                   'اكتشف أخصائي الرعاية الصحية المناسبة لتلبية احتياجاتك من خلال وظيفة البحث التي سهلة الاستخدام.',
                      textAlign: TextAlign.center,
-                  style: GoogleFonts.alexandria(
+                  style: GoogleFonts.cairo(
                       fontSize: 16,
                       color: const Color.fromRGBO(144, 144, 144, 1)),
                 )

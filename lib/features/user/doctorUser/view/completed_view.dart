@@ -29,7 +29,7 @@ class CompletedView extends GetView<DoctorController> {
             Text(
               'تم الحجز بنجاح',
               textAlign: TextAlign.center,
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                   fontSize: 15, fontWeight: FontWeight.w600),
             ),
             const SizedBox(
@@ -38,21 +38,21 @@ class CompletedView extends GetView<DoctorController> {
             Text(
                 'شكرا لك لحجز موعد لإجراء الفحص الطبي، نحن نقدر اهتمامكم بخدماتنا سيتم تحديد موعد مع الطبيب في  اقرب وقتب برجاء  متابعة من خلال شاشة حجوزاتك',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                     fontSize: 12, fontWeight: FontWeight.w500)),
             const SizedBox(
               height: 20,
             ),
             Text(' دكتور  علي الياسري',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                     fontSize: 15, fontWeight: FontWeight.w600)),
             const SizedBox(
               height: 10,
             ),
             Text('اخصائي  طب الفم واسنان وجراحة وتقويم الاسنان ',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.alexandria(
+                style: GoogleFonts.cairo(
                     color: AppColors.greyColor.withOpacity(.3),
                     fontSize: 12,
                     fontWeight: FontWeight.w500)),
@@ -82,7 +82,7 @@ class CompletedView extends GetView<DoctorController> {
                       ),
                       Text('غدآ 8 مارس  ',
                           textAlign: TextAlign.center,
-                          style: GoogleFonts.alexandria(
+                          style: GoogleFonts.cairo(
                               color: AppColors.greyColor.withOpacity(.3),
                               fontSize: 10,
                               fontWeight: FontWeight.w500)),
@@ -103,7 +103,7 @@ class CompletedView extends GetView<DoctorController> {
                       ),
                       Text('العراق / محافظة النجف / حي الصحة',
                           textAlign: TextAlign.center,
-                          style: GoogleFonts.alexandria(
+                          style: GoogleFonts.cairo(
                               color: AppColors.greyColor.withOpacity(.3),
                               fontSize: 10,
                               fontWeight: FontWeight.w500)),
@@ -135,7 +135,7 @@ class CompletedView extends GetView<DoctorController> {
         child: Text(
           'تاكيد',
           textAlign: TextAlign.center,
-          style: GoogleFonts.alexandria(
+          style: GoogleFonts.cairo(
             fontWeight: FontWeight.w700,
             fontSize: 17,
             height: 1.3,

@@ -52,9 +52,9 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           },
           decoration: InputDecoration(
             labelText: widget.label, // Label text in Arabic
-            labelStyle: GoogleFonts.alexandria(),
+            labelStyle: GoogleFonts.cairo(),
             hintText: widget.hint,
-            hintStyle: GoogleFonts.alexandria(
+            hintStyle: GoogleFonts.cairo(
                 fontSize: widget.fontSize ?? 15, color: widget.fontColor),
             suffixIcon: widget.label == 'password'.tr
                 ? IconButton(

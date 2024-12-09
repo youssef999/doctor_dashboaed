@@ -34,7 +34,7 @@ class ResetView extends GetView<AuthController> {
           child: Text(
             'نسيت كلمة المرور',
             textAlign: TextAlign.center,
-            style: GoogleFonts.alexandria(
+            style: GoogleFonts.cairo(
               fontWeight: FontWeight.w700,
               fontSize: 17,
               height: 1.3,
@@ -62,7 +62,7 @@ class ResetView extends GetView<AuthController> {
             Text(
               'يرجي كتابة رقم جوالك وسيتم ارسال رمز الي هاتفك لاسترجاع كلمة المرور',
               textAlign: TextAlign.center,
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w400,
                 fontSize: 15,
                 height: 1.5,

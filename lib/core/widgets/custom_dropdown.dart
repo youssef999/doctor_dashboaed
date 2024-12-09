@@ -38,7 +38,7 @@ class CustomDropDown extends StatelessWidget {
                                     value: value,
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Text(value,style: GoogleFonts.alexandria(fontSize: 20,fontWeight: FontWeight.w400),),
+                                      child: Text(value,style: GoogleFonts.cairo(fontSize: 20,fontWeight: FontWeight.w400),),
                                     ),
                                   );
                                 }).toList(),

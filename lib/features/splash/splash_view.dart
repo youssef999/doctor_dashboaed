@@ -1,7 +1,6 @@
 import 'package:doctor/core/resources/app_assets.dart';
 import 'package:doctor/core/resources/app_colors.dart';
 import 'package:doctor/features/splash/intro.dart';
-import 'package:doctor/features/splash/onBoard.dart';
 import 'package:doctor/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -76,8 +75,8 @@ class _SplashViewState extends State<SplashView> {
           // SizedBox(
           //   width: 200,
           //   height: 100,
-          //   child: DefaultTextStyle(
-          //     style: GoogleFonts.alexandria(fontSize: 23.0, color: Colors.white),
+          //   child: DefaultGoogleFonts.cairo(
+          //     style: GoogleFonts.cairo(fontSize: 23.0, color: Colors.white),
           //     child: AnimatedTextKit(
           //       totalRepeatCount: 1,
           //       // pause: Duration(minutes: 1),

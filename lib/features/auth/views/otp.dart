@@ -34,7 +34,7 @@ class OtpView extends GetView<AuthController> {
           child: Text(
             'تحقق من الرمز',
             textAlign: TextAlign.center,
-            style: GoogleFonts.alexandria(
+            style: GoogleFonts.cairo(
               fontWeight: FontWeight.w700,
               fontSize: 17,
               height: 1.3,
@@ -62,7 +62,7 @@ class OtpView extends GetView<AuthController> {
             Text(
               'يرجي كتابة الرمز الذي تم ارساله الي رقم موبايل 0123456789',
               textAlign: TextAlign.center,
-              style: GoogleFonts.alexandria(
+              style: GoogleFonts.cairo(
                 fontWeight: FontWeight.w400,
                 fontSize: 15,
                 height: 1.5,
@@ -97,7 +97,7 @@ class OtpView extends GetView<AuthController> {
                 children: [
                   Text(
                     'إعادة ارسال الرمز',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w400,
                       fontSize: 14,
                       color: const Color(0xFF007BFF),
@@ -106,7 +106,7 @@ class OtpView extends GetView<AuthController> {
                   const SizedBox(width: 5),
                   Text(
                     '00:30',
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w400,
                       fontSize: 14,
                       color: const Color(0xFF7D7D7D),

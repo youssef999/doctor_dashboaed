@@ -66,7 +66,7 @@ class RateView extends GetView<RateController> {
                 children: [
                   Text(
                     name,
-                    style: GoogleFonts.alexandria(
+                    style: GoogleFonts.cairo(
                       fontWeight: FontWeight.w500,
                       fontSize: 13,
                       color: Colors.black,
@@ -76,7 +76,7 @@ class RateView extends GetView<RateController> {
                   Expanded(
                     child: Text(
                       review,
-                      style: GoogleFonts.alexandria(
+                      style: GoogleFonts.cairo(
                         fontWeight: FontWeight.w400,
                         fontSize: 9,
                         color: Colors.black,
